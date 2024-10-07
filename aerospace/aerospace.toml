@@ -152,7 +152,7 @@ alt-shift-l = ['join-with right', 'mode main']
 
 
 [[on-window-detected]]
-if.window-title-regex-substring = '(setting|设置)'
+if.window-title-regex-substring = '(setting|设置|DevTools)'
 run = 'layout floating'
 
 [[on-window-detected]]
@@ -164,5 +164,5 @@ if.app-id = 'com.tencent.xinWeChat'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-name-regex-substring = '(AV Master|漫画|Telegram|IINA|网易云音乐|网易云)'
+if.app-name-regex-substring = '(AV Master|漫画|Telegram|IINA|网易云音乐|网易云|MAA)'
 run = 'layout floating'
