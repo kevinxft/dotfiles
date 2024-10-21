@@ -4,7 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
-    { "folke/neodev.nvim",                   opts = {} },
+    { "folke/neodev.nvim", opts = {} },
   },
   config = function()
     -- import lspconfig plugin
@@ -131,20 +131,20 @@ return {
           },
         })
       end,
-      ["tsserver"] = function()
-        lspconfig["tsserver"].setup({
+      ["ts_ls"] = function()
+        lspconfig["ts_ls"].setup({
           capabilities = capabilities,
-          filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+          filetypes = { "typescript", "typescriptreact", "typescript.tsx", "vue" },
           on_attach = function(client, bufnr)
             local opts = { noremap = true, silent = true }
 
             -- 设置快捷键
-            vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-            vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
-            vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+            vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
+            vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+            vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
           end,
         })
-      end
+      end,
     })
   end,
 }
