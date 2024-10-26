@@ -8,12 +8,12 @@ config.color_scheme = "Catppuccin Mocha"
 
 -- fonts
 -- config.font = wezterm.font("MonacoLigaturized Nerd Font Mono")
--- config.font = wezterm.font("Monaco Nerd Font Mono")
+-- config.font = wezterm.font("Monoco Fira Nerd")
 config.font = wezterm.font_with_fallback({
-	"CodeNewRoman Nerd Font",
+	"Monaco Fira Nerd",
 })
 
-config.font_size = 18.0
+config.font_size = 16.0
 
 config.line_height = 1.1
 
