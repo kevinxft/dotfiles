@@ -164,5 +164,5 @@ if.app-id = 'com.tencent.xinWeChat'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-name-regex-substring = '(AV Master|漫画|Telegram|IINA|网易云音乐|网易云|MAA)'
+if.app-name-regex-substring = '(AV Master|漫画|Telegram|IINA|网易云音乐|网易云|MAA|EuDic|欧路词典)'
 run = 'layout floating'
