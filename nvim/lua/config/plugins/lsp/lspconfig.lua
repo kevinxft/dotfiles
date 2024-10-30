@@ -7,6 +7,10 @@ return {
     { "folke/neodev.nvim", opts = {} },
   },
   config = function()
+    -- local status_ok, _ = pcall(require, "mason")
+    -- if not status_ok then
+    --   return
+    -- end
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
 

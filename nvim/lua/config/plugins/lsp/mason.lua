@@ -3,7 +3,9 @@ return {
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "nevim/nvim-lspconfig",
   },
+  priority = 1000,
   config = function()
     -- import mason
     local mason = require("mason")
